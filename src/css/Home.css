@@ -1,0 +1,108 @@
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 50px 20px;
+  background-color: black; /* Matches dark mode background */
+  color: #fff;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Left: Typing Text */
+.home-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.greeting {
+  font-size: 28px;
+  color: #00a14e;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.typing {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.typewriter-text {
+  color: #00ff85; /* Bright green for animation */
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Contact Me Button */
+.home-btn {
+  background-color: #00802b; /* Green theme */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.home-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-btn:hover {
+  background-color: #00a14e; /* Brighter green on hover */
+  transform: scale(1.1);
+}
+
+/* Right: Profile Image */
+/* Right: Profile Image */
+.home-image {
+  flex: 1;
+  text-align: center;
+}
+
+
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-text {
+    padding: 0;
+  }
+
+  .home-btn {
+    margin: 10px auto;
+  }
+}

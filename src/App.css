@@ -1,0 +1,67 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.App.light {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.App.dark {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #00802b;
+}
+
+button {
+  background-color: #00802b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #006f1d;
+}
+
+h1, h2, h3 {
+  color: #00802b;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.navbar a {
+  margin: 0 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #00802b;
+}

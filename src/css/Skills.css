@@ -1,0 +1,152 @@
+/* General Section Styling */
+.skills-section {
+  padding: 40px;
+  background-color: #0d0303;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color:#00802b;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  color: #00802b;;
+}
+
+/* Skills Block (Container Styling) */
+.skills-block {
+  flex: 1 1 45%;
+  padding: 20px;
+  background: linear-gradient(135deg, hsl(0, 75%, 2%), hsl(165, 10%, 8%));
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(12, 181, 91, 0.952);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+  
+}
+
+.skills-block:hover {
+  transform: translateY(-5px);
+ 
+}
+
+/* Skills Heading */
+.skills-heading {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Technical Skills */
+.progress-bar {
+  margin-bottom: 15px;
+}
+
+.bar {
+  background-color: #ddd;
+  border-radius: 4px;
+  height: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fill {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.html-fill {
+  width: 90%;
+  background-color: #e44d26;
+}
+
+.css-fill {
+  width: 80%;
+  background-color: #264de4;
+}
+
+.js-fill {
+  width: 70%;
+  background-color: #f0db4f;
+}
+
+.react-fill {
+  width: 60%;
+  background-color: #61dafb;
+}
+
+/* Soft Skills Section */
+.soft-skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.skill-ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-ring:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+svg {
+  transform: rotate(-90deg); /* Ensures correct starting point */
+}
+
+.background-circle {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 10;
+}
+
+.progress-circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 283; /* Full circle */
+  stroke-dashoffset: calc(283 - (283 * var(--progress)) / 100); /* Adjust based on progress */
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+/* Individual Ring Colors */
+.teamwork {
+  stroke: #4caf50; /* Green */
+}
+
+.communication {
+  stroke: #2196f3; /* Blue */
+}
+
+.problem-solving {
+  stroke: #ff9800; /* Orange */
+}
+
+.time-management {
+  stroke: #00bcd4; /* Cyan */
+}
+
+.skill-label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}

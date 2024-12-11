@@ -1,0 +1,99 @@
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 50px 20px;
+  background-color: black; /* Matches dark mode background */
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Profile Image */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 128, 43, 0.5); /* Green glow effect */
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* About Details */
+.about-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00802b; /* Green theme color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #00802b; /* Green theme color for important text */
+  font-weight: bold;
+}
+
+/* CV Button Styling */
+.cv-button {
+  display: inline-block;
+  background-color: #00802b; /* Green theme color */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.cv-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cv-button:hover {
+  background-color: #00a14e; /* Brighter green on hover */
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-details {
+    padding-top: 20px;
+  }
+}

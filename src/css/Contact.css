@@ -1,0 +1,111 @@
+/* Contact Page Styles */
+.contact-page {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  width: 48%; /* Make two columns */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f1f1f1;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.form-group textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color: #00a14e;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #05b65b;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 26px;
+  }
+
+  .form-column {
+    width: 100%; /* Stack columns on smaller screens */
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+}

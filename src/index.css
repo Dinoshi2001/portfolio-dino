@@ -1,0 +1,128 @@
+/* Global styles for dark and light modes */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #000; /* Black background for dark mode */
+  color: white; /* White text */
+}
+
+.light-mode {
+  background-color: #fff; /* White background for light mode */
+  color: black; /* Black text */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.header ul li {
+  margin-right: 20px;
+}
+
+.header a {
+  color: #00802b; /* Green color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.mode-toggle {
+  background-color: #00802b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mode-toggle:hover {
+  background-color: #005f1f;
+}
+
+/* Other sections styling, for example, Home section */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+  height: 100vh; /* Full viewport height */
+}
+
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.home-text h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #00802b; /* Green color for typing effect */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00802b;
+  display: inline-block;
+  animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.home-image {
+  flex: 1;
+  text-align: center;
+}
+
+.home-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
